@@ -134,5 +134,5 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-image: url(img/julia-child-kitchen.jpg);
+  background-image: url("../img/julia-child-kitchen.jpg");
 }
