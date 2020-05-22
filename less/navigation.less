@@ -1,0 +1,54 @@
+.top-section {
+    text-align: center;
+
+    h1 {
+    @media @tablet {
+        font-size: @title-fsize-tab;
+        };
+    @media @desktop {
+        font-size: @title-fsize-des;
+        };
+
+    };
+};
+
+
+
+.navbar {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-size: @stitle-fsize-mob;
+
+    .flex(column, center, center);
+
+    @media @tablet {
+        .flex(row, space-evenly, auto);
+        font-size: @stitle-fsize-tab;
+    };
+
+    @media @desktop {
+        font-size: @stitle-fsize-des;
+    }
+
+    .dashnav {
+        border-top: 2px solid slateblue;
+        border-bottom: 2px solid slateblue;
+
+        @media @tablet {
+            border-top: none;
+            border-bottom: none;
+        };
+        
+    };
+
+    a {
+        margin: 1%;
+        padding: 2.5%;
+        text-decoration: none;
+        color: slateblue;
+
+        &:hover {
+            color: darken(slateblue, 20%);
+        };
+    }
+}
