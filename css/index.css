@@ -137,3 +137,6 @@ body {
   background-image: url("../img/julia-child-kitchen.jpg");
   color: #ACAD94;
 }
+h1 {
+  font-size: 4rem;
+}
