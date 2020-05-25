@@ -35,7 +35,8 @@
 
 img {
     height: auto;
-    width: 96vw;
+    width: 80vw;
+    padding: 4% 0%;
 
     @media @tablet {
         height: 19vh;
@@ -43,25 +44,30 @@ img {
         padding: .5%;
     };
     @media @desktop {
-        // &:hover 
-         };
+        &:hover {
+            height: 30vh;
+            width: auto;
+            };
+        };
 };
 
 
 .pics {
     padding-top: 3%;
-   @media @tablet {.flex(column, auto, space-around);
+    @media @tablet {
+       .flex(column, center, space-around);
             }
-    .subgroup1{
-        font-size: @text-fsize-mob;
-        text-align: center;
-        padding: 0% 0% 10%;
-        @media @tablet {
-            font-size: @text-fsize-tab;
-            color: @font-color-light2;
-        };
-    };      
+        .subgroup1{
+            font-size: @text-fsize-mob;
+            text-align: center;
+            padding: 0% 0% 10%;
+            @media @tablet {
+                font-size: @text-fsize-tab;
+                color: @font-color-light2;
+            };
+        };      
         .picgroup1 {
+            .flex(column, center, center);
             @media @tablet { 
                 .flex(row, space-evenly, auto);
                 padding-bottom: 8%;
@@ -69,6 +75,7 @@ img {
         };
             
         .picgroup2 {
+            .flex(column, center, center);
             @media @tablet {
                 .flex(row, space-evenly, auto);
             };
