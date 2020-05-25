@@ -2,10 +2,32 @@
     h3 {
         text-align: center;
         padding: 5% 0%;
-        font-size: @stitle-fsize-tab;
-        border-top: 1px solid slategrey;
+        font-size: @stitle-fsize-mob;
+        @media @tablet {
+            font-size: @stitle-fsize-tab;
+
+        };
+
+    };
+    .description {
+        .flex(row, center, center);
+        
     };
 
+    p {
+        color: @font-color-light2;
+        font-size: @text-fsize-mob;
+        text-align: justify;
+        padding: 0% 3% 3%;
+        @media @tablet {
+            font-size: @text-fsize-tab;
+            width: 50vw;
+        };
+        
+    };
+    
+    border-bottom: 1px solid @font-color-dark;
+    color: @font-color-light;
 };
 
 img {
@@ -16,24 +38,30 @@ img {
         height: 19vh;
         width: auto;
         padding: .5%;
-    }
-}
+    };
+    @media @desktop {
+        // &:hover 
+         };
+};
+
 
 .pics {
-    
+    padding-top: 3%;
    @media @tablet {.flex(column, auto, space-around);
             }
             
         .picgroup1 {
-               @media @tablet { .flex(row, space-evenly, auto);
-               padding-bottom: 8%;
+            @media @tablet { 
+                .flex(row, space-evenly, auto);
+                padding-bottom: 8%;
             };
         };
             
         .picgroup2 {
-                @media @tablet {.flex(row, space-evenly, auto);
-                    };
+            @media @tablet {
+                .flex(row, space-evenly, auto);
             };
+        };
                     
 };
                     

@@ -2,8 +2,10 @@
     text-align: center;
 
     h1 {
+        border-top: 2px solid #3C0000;
         font-size: @title-fsize-mob;
-        padding-bottom: 8%;
+        padding: 6% 0% 5%;
+        color: @font-color-light2;
     @media @tablet {
         font-size: @title-fsize-tab;
         };
@@ -17,24 +19,23 @@
 
 
 .navbar {
-    margin-top: 1%;
-    margin-bottom: 5%;
+    margin: 1% 0%;
     font-size: @stitle-fsize-mob;
 
     .flex(column, center, center);
 
     @media @tablet {
-        .flex(row, space-evenly, auto);
         font-size: @stitle-fsize-tab;
+        .flex(row, space-evenly, auto);
     };
 
     @media @desktop {
         font-size: @stitle-fsize-des;
-    }
+    };
 
     .dashnav {
-        border-top: 2px solid slateblue;
-        border-bottom: 2px solid slateblue;
+        border-top: 2px solid @font-color-light;
+        border-bottom: 2px solid @font-color-light;
 
         @media @tablet {
             border-top: none;
@@ -47,10 +48,11 @@
         margin: 1%;
         padding: 2.5%;
         text-decoration: none;
-        color: slateblue;
+        color: @font-color-dark2;
+
 
         &:hover {
-            color: darken(slateblue, 20%);
+            color: darken(@font-color-dark2, 20%);
         };
     }
 }
