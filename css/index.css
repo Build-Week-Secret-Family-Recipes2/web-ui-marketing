@@ -134,6 +134,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  background-attachment: fixed;
   background-image: url("../img/julia-child-kitchen2.jpg");
   color: #050609;
   margin: 1%;
@@ -144,9 +145,8 @@ body {
   text-align: center;
 }
 .top-section h1 {
-  border-top: 2px solid #3C0000;
   font-size: 3.4rem;
-  padding: 6% 0% 5%;
+  padding: 5% 0% 4%;
   color: #81F0E5;
 }
 @media (min-width: 500px) {
@@ -161,7 +161,9 @@ body {
 }
 .navbar {
   margin: 1% 0%;
+  padding: 2% 0%;
   font-size: 2.8rem;
+  border-bottom: 2px solid #3C0000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +180,7 @@ body {
 }
 @media (min-width: 1000px) {
   .navbar {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .navbar .dashnav {
@@ -195,10 +197,10 @@ body {
   margin: 1%;
   padding: 2.5%;
   text-decoration: none;
-  color: #774936;
+  color: #81F0E5;
 }
 .navbar a:hover {
-  color: #311e16;
+  color: #129387;
 }
 footer {
   padding: 10% 5%;
@@ -265,6 +267,17 @@ img {
     flex-direction: column;
     justify-content: auto;
     align-items: space-around;
+  }
+}
+.pics .subgroup1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0% 0% 10%;
+}
+@media (min-width: 500px) {
+  .pics .subgroup1 {
+    font-size: 3.6rem;
+    color: #81F0E5;
   }
 }
 @media (min-width: 500px) {

@@ -49,7 +49,15 @@ img {
     padding-top: 3%;
    @media @tablet {.flex(column, auto, space-around);
             }
-            
+    .subgroup1{
+        font-size: @text-fsize-mob;
+        text-align: center;
+        padding: 0% 0% 10%;
+        @media @tablet {
+            font-size: @text-fsize-tab;
+            color: @font-color-light2;
+        };
+    };      
         .picgroup1 {
             @media @tablet { 
                 .flex(row, space-evenly, auto);

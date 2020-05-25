@@ -2,9 +2,9 @@
     text-align: center;
 
     h1 {
-        border-top: 2px solid #3C0000;
+        // border-top: 2px solid #3C0000;
         font-size: @title-fsize-mob;
-        padding: 6% 0% 5%;
+        padding: 5% 0% 4%;
         color: @font-color-light2;
     @media @tablet {
         font-size: @title-fsize-tab;
@@ -19,8 +19,14 @@
 
 
 .navbar {
+    // overflow: hidden;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
     margin: 1% 0%;
+    padding: 2% 0%;
     font-size: @stitle-fsize-mob;
+    border-bottom: 2px solid #3C0000;
 
     .flex(column, center, center);
 
@@ -48,11 +54,11 @@
         margin: 1%;
         padding: 2.5%;
         text-decoration: none;
-        color: @font-color-dark2;
+        color: @font-color-light2;
 
 
         &:hover {
-            color: darken(@font-color-dark2, 20%);
+            color: darken(@font-color-light2, 40%);
         };
     }
 }
