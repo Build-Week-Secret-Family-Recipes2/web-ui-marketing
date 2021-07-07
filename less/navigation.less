@@ -1,0 +1,64 @@
+.top-section {
+    text-align: center;
+
+    h1 {
+        // border-top: 2px solid #3C0000;
+        font-size: @title-fsize-mob;
+        padding: 5% 0% 4%;
+        color: @font-color-light2;
+    @media @tablet {
+        font-size: @title-fsize-tab;
+        };
+    @media @desktop {
+        font-size: @title-fsize-des;
+        };
+
+    };
+};
+
+
+
+.navbar {
+    // overflow: hidden;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    margin: 1% 0%;
+    padding: 2% 0%;
+    font-size: @stitle-fsize-mob;
+    border-bottom: 2px solid #3C0000;
+
+    .flex(column, center, center);
+
+    @media @tablet {
+        font-size: @stitle-fsize-tab;
+        .flex(row, space-evenly, auto);
+    };
+
+    @media @desktop {
+        font-size: @stitle-fsize-des;
+    };
+
+    .dashnav {
+        border-top: 2px solid @font-color-light;
+        border-bottom: 2px solid @font-color-light;
+
+        @media @tablet {
+            border-top: none;
+            border-bottom: none;
+        };
+        
+    };
+
+    a {
+        margin: 1%;
+        padding: 2.5%;
+        text-decoration: none;
+        color: @font-color-light2;
+
+
+        &:hover {
+            color: darken(@font-color-light2, 40%);
+        };
+    }
+}

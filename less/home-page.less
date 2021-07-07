@@ -1,0 +1,85 @@
+.main-content {
+    h3 {
+        text-align: center;
+        padding: 5% 0%;
+        font-size: @stitle-fsize-mob;
+        @media @tablet {
+            font-size: @stitle-fsize-tab;
+
+        };
+
+    };
+    .description {
+        .flex(row, center, center);
+        
+    };
+
+    p {
+        font-size: @text-fsize-mob;
+        text-align: justify;
+        padding: 0% 3% 3%;
+        @media @tablet {
+            color: @font-color-light2;
+            font-size: @text-fsize-tab;
+            width: 50vw;
+        };
+        @media @desktop {
+            font-size: @text-fsize-des;
+        };
+        
+    };
+    
+    border-bottom: 1px solid @font-color-dark;
+    color: @font-color-light2;
+};
+
+img {
+    height: auto;
+    width: 80vw;
+    padding: 4% 0%;
+
+    @media @tablet {
+        height: 19vh;
+        width: auto;
+        padding: .5%;
+    };
+    @media @desktop {
+        &:hover {
+            height: 30vh;
+            width: auto;
+            };
+        };
+};
+
+
+.pics {
+    padding-top: 3%;
+    @media @tablet {
+       .flex(column, center, space-around);
+            }
+        .subgroup1{
+            font-size: @text-fsize-mob;
+            text-align: center;
+            padding: 0% 0% 10%;
+            @media @tablet {
+                font-size: @text-fsize-tab;
+                color: @font-color-light2;
+            };
+        };      
+        .picgroup1 {
+            .flex(column, center, center);
+            @media @tablet { 
+                .flex(row, space-evenly, auto);
+                padding-bottom: 8%;
+            };
+        };
+            
+        .picgroup2 {
+            .flex(column, center, center);
+            @media @tablet {
+                .flex(row, space-evenly, auto);
+            };
+        };
+                    
+};
+                    
